@@ -1,0 +1,7 @@
+URxvt.font: xft:SourceCodePro:size:11
+URxvt.transparent: true
+URxvt.saveLines: 12000
+URxvt.scrollBar: false
+URxvt.background: Black
+URxvt.foreground: White
+
