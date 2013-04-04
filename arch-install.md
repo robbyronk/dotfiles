@@ -46,15 +46,17 @@ Uncomment the line "en_US.UTF-8 UTF-8"
 Create snapshot.
 Log in to root.
 
-`useradd -m -g users -s /bin/bash robbs`
-`passwd robbs`
-`usermod -a -G wheel robbs`
+`# useradd -m -g users -s /bin/bash robbs`
+
+`# passwd robbs`
+
+`# usermod -a -G wheel robbs`
 
 Log in as robbs.
 
-`sudo pacman -S xorg-server xorg-xinit xorg-server-utils virtualbox-guest-utils xterm git subversion i3 vim chromium dmenu openssh rxvt-unicode wget unzip xclip jdk7-openjdk` (choose Droid font)
+`$ sudo pacman -S xorg-server xorg-xinit xorg-server-utils virtualbox-guest-utils xterm git subversion i3 vim chromium dmenu openssh rxvt-unicode wget unzip xclip jdk7-openjdk tmux` (choose Droid font)
 
-`sudo modprobe -a vboxguest vboxsf vboxvideo`
+`$ sudo modprobe -a vboxguest vboxsf vboxvideo`
 
 Create /etc/modules-load.d/virtualbox.conf with these lines:
 vboxguest
@@ -66,15 +68,15 @@ VBoxClient-all &
 setxkbmap dvorak
 exec i3
 
-`startx` should now work.
+`$ startx` should now work.
 
-Generate a ssh key with `ssh-keygen -t rsa -C "robby.ronk@gmail.com"`. Put that on the servers that you need to log in to.
+Generate a ssh key with `$ ssh-keygen -t rsa -C "robby.ronk@gmail.com"`. Put that on the servers that you need to log in to.
 
 Install Lastpass, IntelliJ.
 
-If IntelliJ complains about missing libgif.so.4, run `pacman -S libungif`.
+If IntelliJ complains about missing libgif.so.4, run `$ pacman -S libungif`.
 
-Link the IntelliJ startup script: `ln ~/idea*/bin/idea.sh ~/bin/ -s`
+Link the IntelliJ startup script: `$ ln ~/idea*/bin/idea.sh ~/bin/ -s`
 
 
 
