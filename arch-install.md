@@ -37,6 +37,8 @@ Uncomment the line "en_US.UTF-8 UTF-8"
 
 `syslinux-install_update -i -a -m`
 
+Edit `/boot/syslinux/syslinux.conf`
+
 `exit`
 
 `umount /mnt`
