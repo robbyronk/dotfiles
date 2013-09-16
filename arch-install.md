@@ -54,6 +54,8 @@ Log in to root.
 
 `# usermod -a -G wheel robbs`
 
+Uncomment wheel line using visudo.
+
 Log in as robbs.
 
 `$ sudo pacman -S xorg-server xorg-xinit xorg-server-utils virtualbox-guest-utils xterm git subversion i3 vim chromium dmenu openssh rxvt-unicode wget unzip xclip jdk7-openjdk tmux` (choose Droid font)
