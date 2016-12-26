@@ -82,6 +82,8 @@ If IntelliJ complains about missing libgif.so.4, run `$ pacman -S libungif`.
 
 Link the IntelliJ startup script: `$ ln ~/idea*/bin/idea.sh ~/bin/ -s`
 
+Check the keybindings in `.config/i3/config` to make sure they are standard. If not, run `cp /etc/i3/config ~/.config/i3/config`.
+
 
 
 
